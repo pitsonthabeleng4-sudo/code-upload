@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f9f9f9
+}
+ 
+/* Navigation bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 18px 40px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff4d6d;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero img {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Products */
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: 1px solid #ddd;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #e63e5c;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+.products {
+    flex-direction: column;
+    align-items: center
+}
+
+nav {
+    flex-direction: column;
+}
+
+nav ul {
+    flex-direction: column;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: white;
+    margin-top: 40px;
+}
+
+
+
